@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema Financiero Mexicano — Mapa Interactivo</title>
+  <meta name="description" content="Mapa interactivo del sistema financiero mexicano: autoridades, banca múltiple, banca de desarrollo, sector bursátil y sector no bancario." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Cytoscape.js (force-directed graph) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.29.2/cytoscape.min.js"></script>
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       PANTALLA DE CARGA
+  ═══════════════════════════════════════════ -->
+  <div id="loading">
+    <div class="loading-spinner"></div>
+    <p>Construyendo el mapa financiero…</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header id="header">
+    <div id="header-left">
+      <div id="header-icon">🏛</div>
+      <div>
+        <h1>Sistema Financiero Mexicano</h1>
+        <p>Mapa Interactivo de Relaciones e Instituciones</p>
+      </div>
+    </div>
+
+    <!-- Filtros por categoría -->
+    <div id="controls">
+      <button class="filter-btn active" data-filter="all">
+        <span class="dot" style="background:#888"></span>Todos
+      </button>
+      <!-- Los demás botones se generan dinámicamente en script.js -->
+      <div id="filter-items" style="display:contents;"></div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       BARRA DE ESTADÍSTICAS
+  ═══════════════════════════════════════════ -->
+  <div id="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num">25</span>
+      <span>instituciones</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">5</span>
+      <span>sectores</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">50+</span>
+      <span>relaciones</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">~$30 billones</span>
+      <span>MDP en activos totales</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRAFO PRINCIPAL (Cytoscape.js)
+  ═══════════════════════════════════════════ -->
+  <div id="cy"></div>
+
+  <!-- ═══════════════════════════════════════════
+       PANEL LATERAL DE INFORMACIÓN
+  ═══════════════════════════════════════════ -->
+  <aside id="info-panel">
+    <button id="panel-close" title="Cerrar">✕</button>
+
+    <div id="panel-header">
+      <div id="panel-level-badge">Nivel</div>
+      <div id="panel-name">Nombre</div>
+      <div id="panel-fullname">Nombre completo</div>
+    </div>
+
+    <div id="panel-body">
+      <!-- Rol -->
+      <div class="info-block">
+        <div class="info-label">Rol</div>
+        <div class="info-value highlight" id="panel-role-text">—</div>
+      </div>
+
+      <!-- Función -->
+      <div class="info-block">
+        <div class="info-label">Función Principal</div>
+        <div id="panel-funcion-text" class="info-value">—</div>
+      </div>
+
+      <!-- Importancia / Tamaño relativo -->
+      <div class="info-block">
+        <div class="info-label">Importancia Relativa en el Sistema</div>
+        <div id="importance-bar-container">
+          <div id="importance-bar"></div>
+        </div>
+      </div>
+
+      <!-- Activos -->
+      <div class="info-block">
+        <div class="info-label">Activos / Alcance</div>
+        <div class="info-value" id="panel-activos-text">—</div>
+      </div>
+
+      <!-- Dependencia -->
+      <div class="info-block">
+        <div class="info-label">Nivel de Dependencia</div>
+        <div class="info-value" id="panel-dependencia-text">—</div>
+      </div>
+
+      <!-- Conexiones directas -->
+      <div class="info-block">
+        <div class="info-label">Instituciones Conectadas</div>
+        <div id="connections-list">
+          <p style="font-size:12px;color:var(--text-muted)">Selecciona un nodo para ver sus conexiones.</p>
+        </div>
+      </div>
+
+      <!-- Enlace externo -->
+      <a id="panel-link" href="#" target="_blank" rel="noopener">
+        <span>🔗</span>
+        <span>Visitar sitio oficial</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════
+       LEYENDA
+  ═══════════════════════════════════════════ -->
+  <div id="legend">
+    <div id="legend-title">Leyenda</div>
+    <div id="legend-items">
+      <!-- generados por JS -->
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CONTROLES DE ZOOM
+  ═══════════════════════════════════════════ -->
+  <div id="zoom-controls">
+    <button class="zoom-btn" id="zoom-in" title="Acercar">+</button>
+    <button class="zoom-btn" id="zoom-fit" title="Ajustar vista" style="font-size:13px;">⊡</button>
+    <button class="zoom-btn" id="zoom-out" title="Alejar">−</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       TOOLTIP HOVER
+  ═══════════════════════════════════════════ -->
+  <div id="tooltip">
+    <div id="tooltip-name"></div>
+    <div id="tooltip-role"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HINT INICIAL
+  ═══════════════════════════════════════════ -->
+  <div id="hint">
+    <span>💡</span>
+    <span>Haz clic en cualquier institución para ver su detalle</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

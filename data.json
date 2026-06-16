@@ -1,0 +1,406 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "SHCP",
+        "label": "SHCP",
+        "fullName": "Secretaría de Hacienda y Crédito Público",
+        "level": "autoridad",
+        "role": "Autoridad Suprema",
+        "funcion": "Diseña y ejecuta la política fiscal y financiera del país. Supervisa a todas las entidades reguladoras del sistema financiero mexicano.",
+        "dependencia": "Máxima — cabeza del sistema financiero",
+        "activos": "N/A — Regulador",
+        "size": 80,
+        "url": "https://www.gob.mx/shcp"
+      }
+    },
+    {
+      "data": {
+        "id": "Banxico",
+        "label": "Banxico",
+        "fullName": "Banco de México",
+        "level": "autoridad",
+        "role": "Banco Central",
+        "funcion": "Controla la política monetaria, regula la emisión de moneda, administra las reservas internacionales y supervisa el sistema de pagos.",
+        "dependencia": "Autónoma constitucional",
+        "activos": "~$230,000 MDP en reservas internacionales",
+        "size": 75,
+        "url": "https://www.banxico.org.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "CNBV",
+        "label": "CNBV",
+        "fullName": "Comisión Nacional Bancaria y de Valores",
+        "level": "autoridad",
+        "role": "Supervisor Bancario y Bursátil",
+        "funcion": "Supervisa y regula a las entidades financieras para garantizar su estabilidad y solvencia. Autoriza, revisa y sanciona a bancos y casas de bolsa.",
+        "dependencia": "Órgano desconcentrado de la SHCP",
+        "activos": "N/A — Regulador",
+        "size": 65,
+        "url": "https://www.gob.mx/cnbv"
+      }
+    },
+    {
+      "data": {
+        "id": "CNSF",
+        "label": "CNSF",
+        "fullName": "Comisión Nacional de Seguros y Fianzas",
+        "level": "autoridad",
+        "role": "Supervisor de Seguros",
+        "funcion": "Inspecciona y vigila a las instituciones de seguros y fianzas. Garantiza la correcta operación y solvencia del sector asegurador.",
+        "dependencia": "Órgano desconcentrado de la SHCP",
+        "activos": "N/A — Regulador",
+        "size": 55,
+        "url": "https://www.gob.mx/cnsf"
+      }
+    },
+    {
+      "data": {
+        "id": "CONSAR",
+        "label": "CONSAR",
+        "fullName": "Comisión Nacional del Sistema de Ahorro para el Retiro",
+        "level": "autoridad",
+        "role": "Supervisor del Ahorro para Retiro",
+        "funcion": "Regula y supervisa a las AFORES y al sistema de pensiones. Protege los ahorros de los trabajadores para su retiro.",
+        "dependencia": "Órgano desconcentrado de la SHCP",
+        "activos": "Administra ~$6.7 billones MDP en cuentas AFORE",
+        "size": 55,
+        "url": "https://www.gob.mx/consar"
+      }
+    },
+    {
+      "data": {
+        "id": "CONDUSEF",
+        "label": "CONDUSEF",
+        "fullName": "Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros",
+        "level": "autoridad",
+        "role": "Defensor del Usuario",
+        "funcion": "Protege los derechos de los usuarios de servicios financieros. Arbitra conflictos entre usuarios e instituciones y promueve la educación financiera.",
+        "dependencia": "Órgano desconcentrado de la SHCP",
+        "activos": "N/A — Regulador",
+        "size": 48,
+        "url": "https://www.condusef.gob.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "BBVA",
+        "label": "BBVA México",
+        "fullName": "BBVA México",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Privada)",
+        "funcion": "Mayor banco de México por activos. Ofrece crédito, captación de depósitos, tarjetas, hipotecas y servicios de inversión a personas y empresas.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$2.2 billones MDP",
+        "size": 72,
+        "url": "https://www.bbva.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Banorte",
+        "label": "Banorte",
+        "fullName": "Grupo Financiero Banorte",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Nacional)",
+        "funcion": "Mayor banco de capital 100% mexicano. Ofrece crédito, seguros, afore e inversiones. Pilar estratégico de la banca nacional.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$1.8 billones MDP",
+        "size": 68,
+        "url": "https://www.banorte.com"
+      }
+    },
+    {
+      "data": {
+        "id": "Santander",
+        "label": "Santander MX",
+        "fullName": "Banco Santander México",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Privada)",
+        "funcion": "Tercer banco por tamaño en México. Especializado en crédito al consumo, hipotecas y banca empresarial. Filial del grupo español Santander.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$1.2 billones MDP",
+        "size": 60,
+        "url": "https://www.santander.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "HSBC",
+        "label": "HSBC México",
+        "fullName": "HSBC México",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Internacional)",
+        "funcion": "Banca con fuerte presencia en comercio exterior y banca corporativa. Conecta a empresas mexicanas con mercados globales.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$700,000 MDP",
+        "size": 52,
+        "url": "https://www.hsbc.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Citibanamex",
+        "label": "Citibanamex",
+        "fullName": "Banco Nacional de México (Citibanamex)",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Internacional)",
+        "funcion": "Uno de los bancos más antiguos de México. Fuerte en banca de consumo masivo, nómina y banca privada. Filial de Citigroup.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$900,000 MDP",
+        "size": 56,
+        "url": "https://www.banamex.com"
+      }
+    },
+    {
+      "data": {
+        "id": "Scotiabank",
+        "label": "Scotiabank MX",
+        "fullName": "Scotiabank México",
+        "level": "banca_multiple",
+        "role": "Banca Múltiple (Internacional)",
+        "funcion": "Especializado en crédito hipotecario y automotriz. Parte del grupo canadiense Bank of Nova Scotia.",
+        "dependencia": "Regulado por CNBV y Banxico",
+        "activos": "~$500,000 MDP",
+        "size": 46,
+        "url": "https://www.scotiabank.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Nafin",
+        "label": "Nacional Financiera",
+        "fullName": "Nacional Financiera (Nafin)",
+        "level": "banca_desarrollo",
+        "role": "Banca de Desarrollo (PyMEs)",
+        "funcion": "Financia y promueve el desarrollo de PyMEs en México. Otorga garantías y créditos a través de la banca comercial para impulsar la actividad productiva.",
+        "dependencia": "Regulado por CNBV; coordinado por SHCP",
+        "activos": "~$600,000 MDP",
+        "size": 58,
+        "url": "https://www.nafin.com"
+      }
+    },
+    {
+      "data": {
+        "id": "Banobras",
+        "label": "Banobras",
+        "fullName": "Banco Nacional de Obras y Servicios Públicos",
+        "level": "banca_desarrollo",
+        "role": "Banca de Desarrollo (Infraestructura)",
+        "funcion": "Financia proyectos de infraestructura pública: carreteras, agua, transporte. Principal prestamista de gobiernos estatales y municipales.",
+        "dependencia": "Regulado por CNBV; coordinado por SHCP",
+        "activos": "~$800,000 MDP",
+        "size": 60,
+        "url": "https://www.banobras.gob.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Bancomext",
+        "label": "Bancomext",
+        "fullName": "Banco Nacional de Comercio Exterior",
+        "level": "banca_desarrollo",
+        "role": "Banca de Desarrollo (Comercio Exterior)",
+        "funcion": "Impulsa las exportaciones mexicanas y atrae inversión extranjera. Financia cadenas de valor internacionales y proyectos de exportación.",
+        "dependencia": "Regulado por CNBV; coordinado por SHCP",
+        "activos": "~$350,000 MDP",
+        "size": 50,
+        "url": "https://www.bancomext.com"
+      }
+    },
+    {
+      "data": {
+        "id": "BMV",
+        "label": "BMV",
+        "fullName": "Bolsa Mexicana de Valores",
+        "level": "sector_bursatil",
+        "role": "Mercado de Valores",
+        "funcion": "Principal mercado de valores de México. Facilita la emisión y negociación de acciones, deuda e instrumentos financieros. Conecta empresas con inversionistas.",
+        "dependencia": "Regulado por CNBV",
+        "activos": "Capitalización bursátil: ~$10 billones MDP",
+        "size": 65,
+        "url": "https://www.bmv.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "BIVA",
+        "label": "BIVA",
+        "fullName": "Bolsa Institucional de Valores",
+        "level": "sector_bursatil",
+        "role": "Mercado de Valores Alternativo",
+        "funcion": "Segunda bolsa de valores de México, fundada en 2018. Introduce competencia al mercado bursátil y ofrece condiciones diferenciadas para listado de empresas.",
+        "dependencia": "Regulado por CNBV",
+        "activos": "Mercado en crecimiento",
+        "size": 48,
+        "url": "https://www.biva.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "INDEVAL",
+        "label": "INDEVAL",
+        "fullName": "Instituto para el Depósito de Valores",
+        "level": "sector_bursatil",
+        "role": "Depósito Central de Valores",
+        "funcion": "Custodia, administra y transfiere los valores negociados en el mercado bursátil. Es la infraestructura que permite la liquidación de operaciones bursátiles.",
+        "dependencia": "Regulado por CNBV",
+        "activos": "Custodia > $25 billones MDP en valores",
+        "size": 45,
+        "url": "https://www.indeval.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "GBM",
+        "label": "GBM",
+        "fullName": "GBM — Casa de Bolsa",
+        "level": "sector_bursatil",
+        "role": "Casa de Bolsa",
+        "funcion": "Intermediario bursátil que ejecuta operaciones de compraventa de valores. Ofrece también plataformas digitales de inversión al público general.",
+        "dependencia": "Regulado por CNBV y BMV",
+        "activos": "~$200,000 MDP en AUM",
+        "size": 44,
+        "url": "https://www.gbm.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Actinver",
+        "label": "Actinver",
+        "fullName": "Actinver — Casa de Bolsa",
+        "level": "sector_bursatil",
+        "role": "Casa de Bolsa",
+        "funcion": "Intermediario bursátil especializado en fondos de inversión y banca patrimonial. Gestiona portafolios para clientes de alto patrimonio.",
+        "dependencia": "Regulado por CNBV y BMV",
+        "activos": "~$180,000 MDP en AUM",
+        "size": 42,
+        "url": "https://www.actinver.com"
+      }
+    },
+    {
+      "data": {
+        "id": "AFORE_XXI",
+        "label": "AFORE XXI-Banorte",
+        "fullName": "AFORE XXI-Banorte",
+        "level": "sector_no_bancario",
+        "role": "Administradora de Fondos para el Retiro",
+        "funcion": "Mayor AFORE de México por número de cuentahabientes. Administra el ahorro para el retiro de millones de trabajadores bajo supervisión de CONSAR.",
+        "dependencia": "Regulado por CONSAR",
+        "activos": "~$1.2 billones MDP en AUM",
+        "size": 55,
+        "url": "https://www.afore.com.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Coppel",
+        "label": "Financiera Coppel",
+        "fullName": "Financiera Coppel (SOFIPO)",
+        "level": "sector_no_bancario",
+        "role": "Sociedad Financiera Popular (SOFIPO)",
+        "funcion": "Ofrece crédito y captación a segmentos de la población no atendidos por la banca tradicional. Especializada en inclusión financiera en comunidades con bajo acceso.",
+        "dependencia": "Regulado por CNBV",
+        "activos": "~$90,000 MDP",
+        "size": 46,
+        "url": "https://www.coppel.com"
+      }
+    },
+    {
+      "data": {
+        "id": "SOFOM_example",
+        "label": "SOFOMs",
+        "fullName": "Sociedades Financieras de Objeto Múltiple",
+        "level": "sector_no_bancario",
+        "role": "Financieras Especializadas",
+        "funcion": "Otorgan crédito automotriz, hipotecario, personal y empresarial. No captan depósitos del público. Sector que suma más de 1,000 entidades en México.",
+        "dependencia": "Reguladas (ER) por CNBV o no reguladas (ENR)",
+        "activos": "Variado — sector > $500,000 MDP agregado",
+        "size": 50,
+        "url": "https://www.cnbv.gob.mx"
+      }
+    },
+    {
+      "data": {
+        "id": "Clip",
+        "label": "Clip / Fintechs",
+        "fullName": "Fintechs (Clip, Kueski, Conekta, etc.)",
+        "level": "sector_no_bancario",
+        "role": "Tecnología Financiera",
+        "funcion": "Empresas de tecnología que ofrecen pagos digitales, crédito en línea, transferencias y servicios financieros innovadores. Reguladas por la Ley Fintech desde 2018.",
+        "dependencia": "Regulado por CNBV y Banxico (Ley Fintech)",
+        "activos": "Sector en crecimiento acelerado",
+        "size": 48,
+        "url": "https://www.condusef.gob.mx/fintech"
+      }
+    },
+    {
+      "data": {
+        "id": "MAPFRE",
+        "label": "Aseguradoras",
+        "fullName": "Sector Asegurador (MAPFRE, GNP, MetLife, etc.)",
+        "level": "sector_no_bancario",
+        "role": "Instituciones de Seguros",
+        "funcion": "Ofrecen cobertura contra riesgos (vida, salud, daños, automóviles). Gestionan primas y reservas técnicas bajo supervisión de la CNSF.",
+        "dependencia": "Regulado por CNSF",
+        "activos": "Sector suma > $1 billón MDP en reservas",
+        "size": 52,
+        "url": "https://www.cnsf.gob.mx"
+      }
+    }
+  ],
+  "edges": [
+    { "data": { "source": "SHCP", "target": "CNBV", "label": "supervisa", "tipo": "regulacion" } },
+    { "data": { "source": "SHCP", "target": "CNSF", "label": "supervisa", "tipo": "regulacion" } },
+    { "data": { "source": "SHCP", "target": "CONSAR", "label": "supervisa", "tipo": "regulacion" } },
+    { "data": { "source": "SHCP", "target": "CONDUSEF", "label": "supervisa", "tipo": "regulacion" } },
+    { "data": { "source": "SHCP", "target": "Banxico", "label": "coordina", "tipo": "coordinacion" } },
+    { "data": { "source": "Banxico", "target": "BBVA", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Banorte", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Santander", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "HSBC", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Citibanamex", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Scotiabank", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Nafin", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Banobras", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "Banxico", "target": "Bancomext", "label": "regula", "tipo": "regulacion" } },
+    { "data": { "source": "CNBV", "target": "BBVA", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Banorte", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Santander", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "HSBC", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Citibanamex", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Scotiabank", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Nafin", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Banobras", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Bancomext", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "BMV", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "BIVA", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "INDEVAL", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "GBM", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Actinver", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Coppel", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "SOFOM_example", "label": "supervisa (ER)", "tipo": "supervision" } },
+    { "data": { "source": "CNBV", "target": "Clip", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CNSF", "target": "MAPFRE", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CONSAR", "target": "AFORE_XXI", "label": "supervisa", "tipo": "supervision" } },
+    { "data": { "source": "CONDUSEF", "target": "BBVA", "label": "protege usuarios", "tipo": "proteccion" } },
+    { "data": { "source": "CONDUSEF", "target": "SOFOM_example", "label": "protege usuarios", "tipo": "proteccion" } },
+    { "data": { "source": "CONDUSEF", "target": "Clip", "label": "protege usuarios", "tipo": "proteccion" } },
+    { "data": { "source": "SHCP", "target": "Nafin", "label": "coordina", "tipo": "coordinacion" } },
+    { "data": { "source": "SHCP", "target": "Banobras", "label": "coordina", "tipo": "coordinacion" } },
+    { "data": { "source": "SHCP", "target": "Bancomext", "label": "coordina", "tipo": "coordinacion" } },
+    { "data": { "source": "BMV", "target": "GBM", "label": "infraestructura", "tipo": "operacion" } },
+    { "data": { "source": "BMV", "target": "Actinver", "label": "infraestructura", "tipo": "operacion" } },
+    { "data": { "source": "BIVA", "target": "GBM", "label": "infraestructura", "tipo": "operacion" } },
+    { "data": { "source": "INDEVAL", "target": "BMV", "label": "liquidación", "tipo": "operacion" } },
+    { "data": { "source": "INDEVAL", "target": "BIVA", "label": "liquidación", "tipo": "operacion" } },
+    { "data": { "source": "Banorte", "target": "AFORE_XXI", "label": "socia", "tipo": "operacion" } },
+    { "data": { "source": "Nafin", "target": "SOFOM_example", "label": "fondea", "tipo": "operacion" } },
+    { "data": { "source": "Nafin", "target": "BBVA", "label": "segundo piso", "tipo": "operacion" } },
+    { "data": { "source": "Nafin", "target": "Banorte", "label": "segundo piso", "tipo": "operacion" } },
+    { "data": { "source": "Bancomext", "target": "BBVA", "label": "cofinanciamiento", "tipo": "operacion" } },
+    { "data": { "source": "Bancomext", "target": "Banorte", "label": "cofinanciamiento", "tipo": "operacion" } }
+  ]
+}
